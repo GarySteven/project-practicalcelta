@@ -1,0 +1,294 @@
+html,
+body {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: center;
+    /* height: 100%; */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poiret One', cursive;
+    color: black;
+    z-index: 10;
+    /* border: dashed green 3px; */
+}
+
+.nav {
+    position: sticky;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    z-index: 9999;
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    /* border: dashed red 3px; */
+}
+
+.nav-item {
+    height: 100%;
+    display:flex;
+    align-items: center;
+}
+
+.nav-link {
+    color: black;
+}
+
+.nav-link:hover {
+    color: #5d611f;
+}
+
+.active {
+    background-color: lightgrey;
+    color: white;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+.push_right {
+    margin-left: auto;
+}
+
+.push_left {
+    margin-right: auto;
+}
+
+.centre {
+    margin-left: auto;
+    margin-right:auto;
+}
+
+@media only screen and (max-width:600px) {
+    nav. {
+        font-size: .5em;
+        padding: 0;
+    }
+}
+
+.cover {
+    display: flex;
+    width: 100%;
+    padding: 0px;
+    margin-bottom: 0px;
+    /* border: dashed pink 3px; */
+}
+
+.header-img {
+    position: relative;
+    margin-top: 7vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-height: 40vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.container-fluid {
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    /* border: solid purple 3px; */
+}
+
+.container-content {
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    margin: auto;
+    min-height: 80vh;
+    width: 50%;
+    padding: 0px;
+    padding-bottom: 50px;
+    /* border: solid blue 3px; */
+}
+
+.text-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    /* border: solid red 3px; */
+}
+
+.gradient {
+    background-image:  linear-gradient(to bottom, rgb(93, 97, 31,.6) ,rgb(93, 97, 31,0)  );
+    height:auto;
+    width: .5%;
+    margin-right: 20px;
+    /* border:dashed blue 3px; */
+}
+
+.text-heading {
+    margin: 0px;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: white;
+    position:sticky;
+    top: 50px;
+    z-index: 9990;
+    /* border: dashed red 3px; */
+}
+
+.text-body {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    height: auto;
+    width: 99.5%;
+    padding: 0px;
+    font-size: 1.3em;
+}
+
+.card-columns {
+    padding: 20px;
+    width: 75%;
+  @include media-breakpoint-only(lg) {
+    column-count: 4;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 5;
+  }
+}
+
+.card-deck {
+    width: 95%;
+    margin-top: 50px;
+}
+
+.card {
+    cursor: pointer;
+    transition: all 0.3s linear;
+    border-radius: 20px;
+}
+
+.card-img-top {
+    border-radius: 20px 20px 0px 0px;
+}
+
+.card:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+.box {
+    background-color: #ddddee;
+    padding: 130px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: auto;
+}
+
+.box > img {
+    width:100%
+}
+
+.box:hover {
+    transform: scale(.9);
+    box-shadow: 4px 4px 4px #888888;
+}
+
+.footer {
+    height: 7vh;
+    text-align: center;
+    background-color: white;
+    color: black;
+    /* border: solid green 3px; */
+}
+
+.zone {
+    /* padding:30px 50px; */
+    /* margin:40px 60px; */
+    cursor:pointer;
+    /* background-color: #5d611f; */
+    /* color:#FFF; */
+    font-size:1em;
+    transition: all 0.3s linear;
+}
+
+.zone:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+h4 {
+    font-family: 'Permanent Marker', cursive;
+}
+
+#content {
+
+}
+
+/*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
+/***********************************************************************
+ *  Green Background
+ **********************************************************************/
+.green{
+    background: #5d611f; /* Old browsers */
+    background: -moz-linear-gradient(top, #5d611f 0%, #a5c956 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5d611f), color-stop(100%,#a5c956)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #5d611f 0%,#a5c956 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #5d611f 0%,#a5c956 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #5d611f 0%,#a5c956 100%); /* IE10+ */
+    background: linear-gradient(top, #5d611f 0%,#a5c956 100%); /* W3C */
+}
+
+/***********************************************************************
+ *  Red Background
+ **********************************************************************/
+.red{
+    background: #C655BE; /* Old browsers */
+    background: -moz-linear-gradient(top, #C655BE 0%, #cf0404 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#C655BE), color-stop(100%,#cf0404)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* IE10+ */
+    background: linear-gradient(top, #C655BE 0%,#cf0404 100%); /* W3C */
+}
+
+/***********************************************************************
+ *  Yellow Background
+ **********************************************************************/
+.yellow{
+    background: #F3AAAA; /* Old browsers */
+    background: -moz-linear-gradient(top, #F3AAAA 0%, #febf04 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F3AAAA), color-stop(100%,#febf04)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* IE10+ */
+    background: linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* W3C */
+}
+
+/***********************************************************************
+ *  Blue Background
+ **********************************************************************/
+.blue{
+    background: #7abcff; /* Old browsers */
+    background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7abcff), color-stop(44%,#60abf8), color-stop(100%,#4096ee)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
+    background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C */
+}
